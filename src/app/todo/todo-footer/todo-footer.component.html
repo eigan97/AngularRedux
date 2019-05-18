@@ -1,0 +1,10 @@
+<footer class="footer">
+  <span class="todo-count"><strong>0</strong> items falantes</span>
+  <ul class="filters">
+    <li *ngFor="let filtro of filtrosValidos">
+      <!-- class="selected" -->
+      <a  (click)="filterAll()">{{ filtro }}</a>
+    </li>
+  </ul>
+  <button class="clear-completed">Limpiar</button>
+</footer>
